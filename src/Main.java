@@ -8,7 +8,7 @@ public class Main {
                 {"ATGCGA", "CAGTGC", "TTATGT", "AGAAGG", "CCCCTA", "TCACTG"}, //caso 1 secuencia horizontal, vertical, diagonal CASO DEL WORD
                 {"ATGCGA", "CATTGC", "CCCAAA", "AGAATG", "CCCAAA", "TTGGAG"}, //caso 2 sin secuencias
                 {"ATGCCA", "CAGTCC", "TTATCT", "AGAACG", "CCCCCA", "TTTTAG"}, //caso 3 secuencia horizontal,vertical, diagonal
-                {"AAAAAA", "CAGTGC", "TTATGT", "AGAAGG", "CCCCTA", "TCACTG"}, //caso 4 secuencia horizontal
+                {"TAAAAA", "CAGTGC", "TTATGT", "AGAAGG", "CGCCTA", "TCACTG"}, //caso 4 secuencia horizontal
                 {"ATGCGA", "CAGTGC", "TTATGT", "AGAATG", "TCCCTA", "TCACTG"}, //caso 5 secuencia diagonal
                 {"CTGCGA", "CCGTGC", "TTCTGT", "AGACGG", "AAAATA", "TTTTAG"}, //caso 6 secuencia horizontal, vertical, diagonal
                 {"ATGCGA", "CAGTGC", "TTATGT", "AGAAGG", "CCCTTA", "TCACTG"}, //caso 7 secuencia vertical, diagonal
@@ -17,7 +17,6 @@ public class Main {
                 {"ATGCGA", "CTGTAC", "TTAAGT", "AGAAGG", "CCGCCA", "ATTTAG"}  //caso 10 secuencia diagonal inversa
         };
 
-        List<String> dna = Arrays.asList("AAAA", "TTTT", "CCCC", "GGGG"); //secuencias a encontrar
 
         System.out.println("Matriz:");
 
@@ -33,7 +32,7 @@ public class Main {
                 System.out.println();
             }
 
-            boolean isMutant = verificarMutante.isMutant(matriz, dna);
+            boolean isMutant = verificarMutante.isMutant(matriz);
             System.out.println("Mutante: " + isMutant);
             System.out.println();
         }

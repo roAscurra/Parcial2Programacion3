@@ -1,8 +1,11 @@
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class verificarMutante {
-    public static boolean isMutant(String[][] matriz, List<String> dna) {
+    public static boolean isMutant(String[][] matriz) {
+        List<String> dna = Arrays.asList("AAAA", "TTTT", "CCCC", "GGGG"); //secuencias a encontrar
+
         int filas = matriz.length;
         int columnas = matriz[0].length;
         boolean mutante = false; // Variable para rastrear si se encuentra una secuencia mutante
